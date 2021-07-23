@@ -1,0 +1,41 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-container li {
+  flex: 0 1 28rem;
+  margin: 1rem;
+  height: 34rem;
+  padding: 0;
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-image {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #a3d2ca;
+}
+
+.product-name:hover {
+  color: #91bab3;
+}
+
+.product-price {
+  font-weight: 300;
+  color: #a3d2ca;
+}

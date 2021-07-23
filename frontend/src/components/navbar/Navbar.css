@@ -1,0 +1,28 @@
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  background: #b5eaea;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #a3d2ca;
+}
+
+.logo a {
+  color: #30475e;
+  font-size: 3.2rem;
+  font-family: "Sail", cursive;
+  transition: 0s linear;
+}
+
+.logo a:hover {
+  color: #fff;
+  transition: 1s ease;
+}
