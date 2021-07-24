@@ -16,13 +16,13 @@
 }
 
 .logo a {
-  color: #30475e;
+  color: #fff;
   font-size: 3.2rem;
   font-family: "Sail", cursive;
-  transition: 0s linear;
+  transition: 0s ease-out;
 }
 
 .logo a:hover {
-  color: #fff;
-  transition: 1s ease;
+  color: #a3d2ca;
+  transition: 1s ease-in-out;
 }

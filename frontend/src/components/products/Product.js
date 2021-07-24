@@ -1,19 +1,17 @@
 import "./Product.css";
 import { Link } from 'react-router-dom'
 
-const Product = () => {
+const Product = ({ product }) => {
     return (
         <div className="product">
             <Link to="#">
-                <li>
-                    <img
-                        src="./assets/products/Product1.jpg"
-                        alt=""
-                        className="product-image"
-                    />
-                    <div className="product-name">Half Moon Earrings</div>
-                    <div className="product-price">LKR 490.00</div>
-                </li>
+                <img
+                    src={product.image}
+                    alt=""
+                    className="product-image"
+                />
+                <div className="product-name">{product.name}</div>
+                <div className="product-price">LKR {product.price}</div>
             </Link>
         </div>
     );
