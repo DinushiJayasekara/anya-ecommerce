@@ -1,16 +1,30 @@
 import "./Home.css";
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import ProductList from '../../components/products/ProductList';
-import { data } from "../../data/data";
+import { listProducts } from '../../actions/ProductActions';
 
 const Home = () => {
-    return (
-        <div className="home">
+
+    const productList = useSelector(state => state.productList);
+    const { products, loading, error } = productList;
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(listProducts());
+        return () => { };
+    }, [dispatch]);
+
+    // loading ? (<div>Loading ...</div>) : error ? (<div>{error}</div>) :
+
+    return loading ? (<div>Loading ...</div>) : error ? (<div>{error}</div>) : (
+        <div className="home" >
             <div className="grid-container">
                 <main className="main">
                     <div className="content">
                         <ul className="product-container">
                             {
-                                data.products.map(product => (
+                                products.map(product => (
                                     <ProductList product={product} key={product.id} />
                                 ))
                             }
