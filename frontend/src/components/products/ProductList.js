@@ -1,10 +1,10 @@
-import "./Product.css";
+import "./ProductList.css";
 import { Link } from 'react-router-dom'
 
 const Product = ({ product }) => {
     return (
-        <div className="product">
-            <Link to="#">
+        <li className="product">
+            <Link to={`/product/${product.id}`}>
                 <img
                     src={product.image}
                     alt=""
@@ -13,7 +13,7 @@ const Product = ({ product }) => {
                 <div className="product-name">{product.name}</div>
                 <div className="product-price">LKR {product.price}</div>
             </Link>
-        </div>
+        </li>
     );
 }
 

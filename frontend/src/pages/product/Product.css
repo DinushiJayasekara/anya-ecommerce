@@ -1,0 +1,19 @@
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.product-details-image {
+  flex: 2 1 30rem;
+}
+
+.product-details-image img {
+  max-width: 30rem;
+  width: 100%;
+}
+.product-details-info {
+  flex: 1 1 15rem;
+}

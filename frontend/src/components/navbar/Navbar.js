@@ -11,7 +11,7 @@ const Navbar = () => {
                     <Link to="#">anya@gmail.com</Link>
                 </div>
                 <div className="logo">
-                    <Link to="index.html">Anya</Link>
+                    <Link to="/">Anya</Link>
                 </div>
                 <div className="navbar-links">
                     <Link to="#">Sign In</Link>
