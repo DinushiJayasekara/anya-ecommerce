@@ -15,8 +15,6 @@ const Home = () => {
         return () => { };
     }, [dispatch]);
 
-    // loading ? (<div>Loading ...</div>) : error ? (<div>{error}</div>) :
-
     return loading ? (<div>Loading ...</div>) : error ? (<div>{error}</div>) : (
         <div className="home" >
             <div className="grid-container">
